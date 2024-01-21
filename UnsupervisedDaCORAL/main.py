@@ -8,13 +8,13 @@ Training of a CNN for an unsupervised Domain Adaptation task.
 Inspired by the original work of Sun et al. : "Deep CORAL: Correlation Alignment for Deep Domain Adaptation"
 
 This is the main file of the project. This task consists of a melanoma vs benign classification task.
-
+The source and target datasets are not provided and should be placed on the folders "./source/training", 
+"./source/validation", "./target/training", and "./target/validation".
 """
 
 import torchvision
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 from torchvision import transforms
 import coral_utils as utils
 from coral_train import Trainer
